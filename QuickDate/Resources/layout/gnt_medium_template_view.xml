@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+	xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"  xmlns:tools="http://schemas.android.com/tools">
+	<com.google.android.gms.ads.nativead.NativeAdView
+		android:layout_height="350dp"
+		android:layout_width="match_parent"
+		android:id="@+id/native_ad_view">
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_centerInParent="true"
+			android:padding="5dp"
+			android:id="@+id/background">
+			<com.google.android.gms.ads.nativead.MediaView
+				android:id="@+id/media_view"
+				android:layout_margin="@dimen/gnt_no_size"
+				android:layout_width="match_parent"
+				android:layout_height="200dp"
+				android:layout_marginTop="@dimen/gnt_no_margin" />
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_height="60dp"
+				android:layout_marginTop="@dimen/gnt_default_margin"
+				android:layout_width="match_parent">
+				<ImageView
+					android:id="@+id/icon"
+					android:layout_width="60dp"
+					android:layout_height="60dp"
+					android:layout_marginTop="@dimen/gnt_no_margin"
+					android:layout_marginStart="@dimen/gnt_default_margin"
+					android:layout_marginBottom="@dimen/gnt_no_margin"
+					android:layout_marginEnd="@dimen/gnt_no_margin"
+					android:scaleType="fitCenter" />
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+					<TextView
+						android:id="@+id/primary"
+						android:textStyle="bold"
+						android:textSize="@dimen/gnt_text_size_large"
+						android:maxLines="2"
+						android:layout_height="match_parent"
+						android:layout_width="match_parent"
+						android:layout_marginTop="@dimen/gnt_no_margin"
+						android:layout_marginBottom="@dimen/gnt_no_margin"
+						android:layout_marginStart="@dimen/gnt_default_margin"
+						android:layout_marginEnd="@dimen/gnt_default_margin" />
+					<LinearLayout
+						android:orientation="horizontal"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="@dimen/gnt_default_margin"
+						android:layout_width="match_parent">
+						<TextView
+							android:background="@drawable/gnt_rounded_corners_shape"
+							android:layout_width="@dimen/gnt_ad_indicator_width"
+							android:gravity="center"
+							android:id="@+id/ad_notification_view"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/gnt_ad_indicator_top_margin"
+							android:layout_marginStart="@dimen/gnt_default_margin"
+							android:layout_marginEnd="@dimen/gnt_default_margin"
+							android:text="@string/ad_attribution"
+							android:textColor="@color/gnt_ad_green"
+							android:textStyle="bold"
+							android:textSize="@dimen/gnt_ad_indicator_text_size" />
+						<TextView
+							android:id="@+id/secondary"
+							android:textStyle="bold"
+							android:textSize="@dimen/gnt_text_size_large"
+							android:maxLines="1"
+							android:layout_height="wrap_content"
+							android:layout_width="match_parent"
+							android:layout_marginTop="@dimen/gnt_no_margin"
+							android:layout_marginBottom="@dimen/gnt_no_margin"
+							android:layout_marginStart="@dimen/gnt_no_margin"
+							android:layout_marginEnd="@dimen/gnt_default_margin" />
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_margin="@dimen/gnt_no_size"
+				android:layout_height="wrap_content"
+				android:paddingBottom="@dimen/gnt_default_margin"
+				android:paddingStart="@dimen/gnt_default_margin"
+				android:id="@+id/body"
+				android:maxLines="3"
+				android:textSize="@dimen/gnt_text_size_small"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="@dimen/gnt_default_margin" />
+		</LinearLayout>
+	</com.google.android.gms.ads.nativead.NativeAdView>
+</merge>
